@@ -14,6 +14,8 @@ namespace myBlog.Models
         [Key]
         public int BlogID { get; set; }
         public string Name { get; set; }
+        //Date WIP??
+        public DateTime BlogDate { get; set; }
 
         [ForeignKey("FK_Admin_for_blog")]
         public int AdminID { get; set; }

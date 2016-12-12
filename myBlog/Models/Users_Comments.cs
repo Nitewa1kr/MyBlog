@@ -16,6 +16,8 @@ namespace myBlog.Models
         //REQUIRED
         public string Comment { get; set; }
 
+        public DateTime CommentDate { get; set; }
+
         [Required]
         [ForeignKey("FK_Blog_ID")]
         public int BlogID { get; set; }

@@ -15,6 +15,8 @@ namespace myBlog.Models
         public int PostID { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        //Date WIP
+        public DateTime PostDate { get; set; }
 
         [ForeignKey("FK_Blog_ID_For_Posts")]
         public int BlogID { get; set; }
