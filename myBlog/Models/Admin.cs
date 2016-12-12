@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace myBlog.Models
@@ -11,9 +12,15 @@ namespace myBlog.Models
     public class Admin
     {
         public int AdminID { get; set; }
+        //THE THE NAME OF THE ADMIN IS ONLY ONE,
+        //THERE SHOULD BE NO FIELD FOR IT.
         public string AdminHandle { get; set; }
+
+        [Required]
+        [Display(Name = "Password")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
-        //[NotMapped]
+
         
         public DateTime DatePosted { get; set; }
 
