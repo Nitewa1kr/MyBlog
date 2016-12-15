@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="myBlogModelStoreContainer" CdmEntityContainer="myBlogEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="myBlog.Model.Admin">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+          <ScalarProperty Name="ADMIN_NAME" ColumnName="ADMIN_NAME" />
+          <ScalarProperty Name="ADMIN_PASSWORD" ColumnName="ADMIN_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="myBlog.Model.Comment">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="COMMENT_ID" ColumnName="COMMENT_ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="USER_EMAIL" ColumnName="USER_EMAIL" />
+          <ScalarProperty Name="COMMENT_BODY" ColumnName="COMMENT_BODY" />
+          <ScalarProperty Name="C_DATE_TIME" ColumnName="C_DATE_TIME" />
+          <ScalarProperty Name="C_POST_ID" ColumnName="C_POST_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="myBlog.Model.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="POST_ID" ColumnName="POST_ID" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="POST_BODY" ColumnName="POST_BODY" />
+          <ScalarProperty Name="P_DATE_TIME" ColumnName="P_DATE_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="myBlog.Model.Tag">
+        <MappingFragment StoreEntitySet="Tags">
+          <ScalarProperty Name="TAG_ID" ColumnName="TAG_ID" />
+          <ScalarProperty Name="TAG_NAME" ColumnName="TAG_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PostTags" TypeName="myBlog.Model.PostTags" StoreEntitySet="PostTags">
+      <EndProperty Name="Post">
+        <ScalarProperty Name="POST_ID" ColumnName="PT_POST_ID" />
+      </EndProperty>
+      <EndProperty Name="Tags">
+        <ScalarProperty Name="TAG_ID" ColumnName="PT_TAG_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

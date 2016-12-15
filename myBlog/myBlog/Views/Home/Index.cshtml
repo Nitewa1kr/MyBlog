@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model myBlog.ViewModel.AdminViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("Register", "Admin", FormMethod.Post))
+    {
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <td>USER NAME</td>
+                <td>@Html.TextBoxFor(Model => Model.Admin.ADMIN_NAME)</td>
+            </tr>
+            <tr>
+                <td>PASSWORD</td>
+                <td>@Html.TextBoxFor(Model => Model.Admin.ADMIN_PASSWORD)</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Save" /></td>
+            </tr>
+        </table>
+    }
+</body>
+</html>
