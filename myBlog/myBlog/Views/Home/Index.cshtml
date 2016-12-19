@@ -1,0 +1,18 @@
+﻿<div ng-controller="BlogController">
+    <table class="table table-striped">
+        <tr ng-repeat="Post in Posts">
+            <td>{{Post.P_DATE_TIME}}</td>
+            <td>{{Post.TITLE}}</td>
+            <td>{{Post.POST_BODY}}</td>
+            <td>{{Post.POST_AUTHOR}}</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" ng-model="newPost"/>
+                </div>
+                <button href="#" class="btn btn-primary" ng-click="addPost()">POST</button>
+            </td>
+        </tr>
+    </table>
+</div>
