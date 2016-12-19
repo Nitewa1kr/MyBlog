@@ -11,9 +11,15 @@ myBlogApp.controller('BlogController', function ($scope,$http)
     $scope.newPost = "";
     $scope.addPost = function ()
     {
-        $http.post("/home/addPost/", { newPost: $scope.newPost })
+        $http.post("/home/addPost/",
+            {
+                newTitle: $scope.newTitle,
+                newPost: $scope.newPost,
+                newAuthor: $scope.newAuthor,
+                newDate: $scope.newDate
+            })
         .success(function (result) {
-            $scope.post = result;
+            $scope.posts = result;
             $scope.newPost = "";
 
         })

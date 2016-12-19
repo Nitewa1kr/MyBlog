@@ -47,3 +47,4 @@ F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog\bin\System.Web.He
 F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog\bin\System.Web.Mvc.xml
 F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog\obj\Debug\myBlog.dll
 F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog\obj\Debug\myBlog.pdb
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog\obj\Debug\myBlog.csprojResolveAssemblyReference.cache
