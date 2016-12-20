@@ -1,0 +1,23 @@
+Prepare a project report of 20 pages about your project
+
+1)Introduction-Why this project,Purpose of the project,
+Modules in the project,do mention what type of a life cycle model you used to create the project
+
+2)Requirement Analysis-The users of the project,Purpose of each task in your project
+
+3)Technologies-Both hardware and software+reports
+
+4)Design-(tables created) showing connections with other tables
+
+5)Implementation-Mention aboout the CRUD operation
+
+6)Testing-Validations or any unit testing done
+
+7)Other Resources (websites)
+
+
+REQUIREMENT OF THE PROJECT:
+---------------------------
+
+MYBLOG-PROJECT THAT YOU HAVE BEEN WORKING ON
+UNIT TESTING

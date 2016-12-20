@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4A24913E-3EA8-4901-B0DF-76530DCE464F}</ProjectGuid>
+    <ProjectGuid>{B9A91D3F-0FA3-4941-B9B5-5657E5EB8A7F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -128,95 +128,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\myBlogModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>myBlogModel.edmx</DependentUpon>
-      <LastGenOutput>myBlogModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\myBlogModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>myBlogModel.edmx</DependentUpon>
-      <LastGenOutput>myBlogModel.cs</LastGenOutput>
-    </Content>
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="scripts\angular-mocks.js" />
-    <Content Include="scripts\angular.js" />
-    <Content Include="scripts\angular.min.js" />
-    <Content Include="scripts\angular.min.js.map" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <EntityDeploy Include="Models\myBlogModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>myBlogModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\myBlogModel.edmx.diagram">
-      <DependentUpon>myBlogModel.edmx</DependentUpon>
-    </Content>
-    <None Include="scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="scripts\jquery-1.10.2.js" />
-    <Content Include="scripts\jquery-1.10.2.min.js" />
-    <Content Include="scripts\jquery-1.10.2.min.map" />
-    <None Include="scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\jquery-3.1.1.js" />
-    <Content Include="scripts\jquery-3.1.1.min.js" />
-    <Content Include="scripts\jquery-3.1.1.slim.js" />
-    <Content Include="scripts\jquery-3.1.1.slim.min.js" />
-    <None Include="scripts\jquery.validate-vsdoc.js" />
-    <Content Include="scripts\jquery.validate.js" />
-    <Content Include="scripts\jquery.validate.min.js" />
-    <Content Include="scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="scripts\modernizr-2.6.2.js" />
-    <Content Include="scripts\myBlogApp.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Admin.cs">
-      <DependentUpon>myBlogModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Comment.cs">
-      <DependentUpon>myBlogModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\myBlogModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myBlogModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\myBlogModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myBlogModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\myBlogModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>myBlogModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Post.cs">
-      <DependentUpon>myBlogModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Tag.cs">
-      <DependentUpon>myBlogModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="PassHelper\SaltHashing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -226,8 +147,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="scripts\jquery-3.1.1.slim.min.map" />
-    <Content Include="scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -237,8 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Account\" />
-    <Folder Include="Views\Post\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Blog\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -259,9 +179,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>59316</DevelopmentServerPort>
+          <DevelopmentServerPort>49366</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59316/</IISUrl>
+          <IISUrl>http://localhost:49366/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
