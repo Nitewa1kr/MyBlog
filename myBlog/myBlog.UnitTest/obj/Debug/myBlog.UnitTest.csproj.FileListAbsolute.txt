@@ -1,0 +1,12 @@
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\myBlog.UnitTest.dll
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\myBlog.UnitTest.pdb
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\Castle.Core.dll
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\Moq.dll
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\myBlog.Domain.dll
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\myBlog.Domain.pdb
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\Castle.Core.xml
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\bin\Debug\Moq.xml
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\obj\Debug\myBlog.UnitTest.csprojResolveAssemblyReference.cache
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\obj\Debug\myBlog.UnitTest.dll
+F:\College_notes\Adeel_SE\college_project\MyBlog\myBlog\myBlog.UnitTest\obj\Debug\myBlog.UnitTest.pdb

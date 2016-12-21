@@ -1,0 +1,17 @@
+﻿@model IEnumerable<myBlog.Domain.Entities.Post>
+
+@{
+    ViewBag.Title = "Posts";
+}
+
+@foreach (var p in Model)
+{
+    <div>
+        <div>@p.TITLE</div>
+        <div>@p.POST_AUTHOR</div>
+        <div>@p.POST_BODY</div>
+        <div>@p.P_DATE_TIME</div>
+    </div>
+
+}
+
