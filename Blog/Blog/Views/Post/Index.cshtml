@@ -1,0 +1,29 @@
+﻿@*@model IEnumerable<Blog.Models.Posts>*@
+@model PagedList.IPagedList<Blog.Models.Posts>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Index";
+}
+@Html.ActionLink("Create new","Create")
+<br/>
+<br/>
+
+@foreach (var item in Model)
+{
+
+    <div class="container panel panel-primary">
+        <br />
+        <div class="container panel">
+            @Html.ActionLink(item.Title, "Details", new { id = item.PostID })<br />
+        </div>
+        
+        @Html.DisplayFor(modelItem => item.PostBody)<br />
+        By: @Html.DisplayFor(modelItem => item.Author)  <div class="Date">Date: @Html.DisplayFor(modelItem => item.PostDate)</div><br /><br/>
+    </div>
+
+        }
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

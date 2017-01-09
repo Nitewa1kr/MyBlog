@@ -1,9 +1,0 @@
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\myPersonalBlog.Core.dll.config
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\myPersonalBlog.Core.dll
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\myPersonalBlog.Core.pdb
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\EntityFramework.dll
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\EntityFramework.SqlServer.dll
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\EntityFramework.xml
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\bin\Debug\EntityFramework.SqlServer.xml
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\obj\Debug\myPersonalBlog.Core.dll
-F:\College_notes\Adeel_SE\college_project\MyBlog\myPersonalBlog\myPersonalBlog.Core\obj\Debug\myPersonalBlog.Core.pdb

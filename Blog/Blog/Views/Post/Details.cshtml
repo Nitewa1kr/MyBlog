@@ -1,0 +1,38 @@
+﻿@model Blog.Models.Posts
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Posts</h4>
+    <hr />
+    <div class="container panel panel-primary">
+        <br/>
+        @Html.DisplayNameFor(model => model.Title):
+
+        @Html.DisplayFor(model => model.Title)<br />
+
+        @Html.DisplayNameFor(model => model.Author):
+
+        @Html.DisplayFor(model => model.Author)<br />
+
+        @Html.DisplayNameFor(model => model.PostBody):
+
+        @Html.DisplayFor(model => model.PostBody)<br />
+
+        @Html.DisplayNameFor(model => model.PostDate):
+
+        @Html.DisplayFor(model => model.PostDate)<br /><br />
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.PostID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = Model.PostID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+    
+</div>
+
